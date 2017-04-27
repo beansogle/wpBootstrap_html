@@ -1,45 +1,10 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<!-- -->
-<head>
-  <meta charset="<?php bloginfo('charset'); ?>">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="<?php bloginfo('description'); ?>">
-  <meta name="author" content="">
-  <link rel="icon" href="../../favicon.ico">
-
-  <title><?php bloginfo('name'); ?> | <?php wp_title(); ?></title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
-  <?php wp_head(); ?>
-
-</head>
-
-<body>
-
-  <div class="blog-masthead">
-    <div class="container">
-      <nav class="blog-nav">
-        <a class="blog-nav-item active" href="#">Home</a>
-        <a class="blog-nav-item" href="#">New features</a>
-        <a class="blog-nav-item" href="#">Press</a>
-        <a class="blog-nav-item" href="#">New hires</a>
-        <a class="blog-nav-item" href="#">About</a>
-      </nav>
-    </div>
-  </div>
+<?php get_header(); ?>
 
   <div class="container">
 
     <div class="blog-header">
-      <h1 class="blog-title">Uhhh</h1>
-      <p class="lead blog-description">The official uhhhh</p>
+      <h1 class="blog-title">Blog Title</h1>
+      <p class="lead blog-description">Lead blog description</p>
     </div>
 
     <div class="row">
@@ -48,7 +13,7 @@
 
         <div class="blog-post">
           <h2 class="blog-post-title">Sample blog post</h2>
-          <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+          <p class="blog-post-meta">April 27th, 2017 by <a href="#">Sean</a></p>
 
           <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
           <hr>
@@ -84,7 +49,7 @@
 
         <div class="blog-post">
           <h2 class="blog-post-title">Another blog post</h2>
-          <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+          <p class="blog-post-meta">December 23, 2013 by <a href="#">Sean</a></p>
 
           <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur
             purus sit amet fermentum.</p>
@@ -98,7 +63,7 @@
 
         <div class="blog-post">
           <h2 class="blog-post-title">New feature</h2>
-          <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+          <p class="blog-post-meta">December 14, 2013 by <a href="#">Sean</a></p>
 
           <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
             nibh, ut fermentum massa justo sit amet risus.</p>
@@ -161,18 +126,4 @@
   </div>
   <!-- /.container -->
 
-  <footer class="blog-footer">
-
-    <p>
-      <a href="#">Back to top</a>
-    </p>
-  </footer>
-  <?php wp_footer(); ?>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/bootstrap. js"></script>
-
-</body>
-
-</html>
+<?php get_footer(); ?>
