@@ -11,7 +11,6 @@
           <?php while(have_posts()) : the_post(); ?>
         <div class="blog-post">
           <h2 class="blog-post-title">
-            <a href="<?php the_permalink(); ?>">
             <?php the_title(); ?></h2>
           </a>
 
@@ -32,7 +31,9 @@
               </div>
             <?php endif; ?>
 
-            <?php the_excerpt(); ?>
+            <?php the_content(); ?>
+            <hr>
+            <?php comments_template(); ?>
 
         </div>
         <!-- /.blog-post -->
@@ -47,5 +48,7 @@
 
       </div>
       <!-- /.blog-main -->
+
+  
 
 <?php get_footer(); ?>
